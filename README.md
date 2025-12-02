@@ -1,9 +1,5 @@
 ESMS Frontend – Hack Escape Platform
-<img width="719" height="352" alt="image_720" src="https://github.com/user-attachments/assets/1df2f975-96b0-4020-9992-096c204452ff" />
-<img width="720" height="351" alt="image_720" src="https://github.com/user-attachments/assets/be9e621e-ff8d-4c54-b28f-f73f399b4575" />
-<img width="720" height="353" alt="image_720" src="https://github.com/user-attachments/assets/68020b74-e9fb-4271-8bd4-65600250bd01" />
-<img width="720" height="355" alt="image_720" src="https://github.com/user-attachments/assets/9cf26863-e71b-43a7-bde0-39df5d0d7d64" />
-<img width="720" height="337" alt="image_720" src="https://github.com/user-attachments/assets/93648382-c5a9-4ce1-b201-3cd9f6bab9d9" />
+
 
 This repository contains the frontend of the Hack Escape platform, built using React + Vite.
 The application provides a modern, responsive interface that showcases different sections such as the agenda, sponsors, FAQ, and main landing page content.
@@ -88,4 +84,11 @@ Sponsors section
 Reusable component structure
 
 Clean and modular CSS
+
+<img width="719" height="352" alt="image_720" src="https://github.com/user-attachments/assets/1df2f975-96b0-4020-9992-096c204452ff" />
+<img width="720" height="351" alt="image_720" src="https://github.com/user-attachments/assets/be9e621e-ff8d-4c54-b28f-f73f399b4575" />
+<img width="720" height="353" alt="image_720" src="https://github.com/user-attachments/assets/68020b74-e9fb-4271-8bd4-65600250bd01" />
+<img width="720" height="355" alt="image_720" src="https://github.com/user-attachments/assets/9cf26863-e71b-43a7-bde0-39df5d0d7d64" />
+<img width="720" height="337" alt="image_720" src="https://github.com/user-attachments/assets/93648382-c5a9-4ce1-b201-3cd9f6bab9d9" />
+
 
