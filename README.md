@@ -4,7 +4,7 @@ ESMS Frontend – Hack Escape Platform
 This repository contains the frontend of the Hack Escape platform, built using React + Vite.
 The application provides a modern, responsive interface that showcases different sections such as the agenda, sponsors, FAQ, and main landing page content.
 
-🚀 Technologies Used![Uploading image_720.png…]()
+🚀 Technologies Used!
 
 
 React (Vite)
