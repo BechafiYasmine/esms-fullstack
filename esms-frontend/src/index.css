@@ -1,0 +1,162 @@
+/* esms-frontend/src/index.css */
+
+/* --- 1. EXTERNAL IMPORTS (MUST BE FIRST) --- */
+/* Importing Press Start 2P and Inter from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Press+Start+2P&display=swap');
+
+/* --- 2. CSS Custom Properties (Variables) --- */
+:root {
+  /* Colors */
+  --color-dark-bg: #000000;         
+  --color-card-bg: #222222;         
+  --color-accent-yellow: #fff200;   
+  --color-accent-red: #ff3333;      
+
+  /* NEON Colors from Style Analysis */
+  --color-neon-cyan: #00F7FF;       
+  --color-neon-yellow: #F7FF00;     
+  --color-neon-red: #ff3333;        
+
+  --color-text-primary: #ffffff;    
+  --color-text-secondary: #cccccc;  
+  
+  /* Typography - Using Press Start 2P directly */
+  --font-pixel: 'Press Start 2P', monospace;
+  --font-pixel-bold: 'Press Start 2P', monospace; 
+  --font-sans: 'Inter', Arial, sans-serif; 
+
+  /* Spacing */
+  --spacing-unit: 8px;
+  --spacing-sm: calc(var(--spacing-unit) * 2);  /* 16px */
+  --spacing-md: calc(var(--spacing-unit) * 4);  /* 32px */
+  --spacing-lg: calc(var(--spacing-unit) * 8);  /* 64px */
+}
+
+/* --- 3. BASE STYLES --- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: 
+        /* Horizontal lines */
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        /* Vertical lines */
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px; /* Adjust size of the grid cells */
+    background-color: var(--color-background-dark); /* Ensure dark base color */
+
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-dark-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}
+
+/* Ensure all headers use the Pixel font */
+h1, h2, h3, h4 {
+  font-family: var(--font-pixel-bold); 
+  text-transform: uppercase;
+  margin-top: 0;
+  line-height: 1.1; 
+  letter-spacing: 0;
+}
+
+/* Header-specific styling for visual hierarchy */
+h1 {
+  font-size: 4rem; 
+  color: var(--color-accent-yellow);
+  letter-spacing: 5px; 
+}
+
+h2 {
+  font-size: 2.5rem; 
+  color: var(--color-accent-red);
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    font-family: var(--font-sans); 
+}
+
+button {
+    cursor: pointer;
+    font-family: var(--font-sans);
+}
+
+/* --- 4. GLOBAL ELEMENT STYLES & INTERACTIVITY --- */
+
+/* Reset for all elements to inherit the base font/color, especially for the pixelated aesthetic */
+* {
+    /* Preserve existing properties: box-sizing */
+    box-sizing: border-box; 
+    /* The font is applied to the body, but forcing it on all helps ensure components render the pixel look */
+    font-family: var(--font-pixel); 
+    color: var(--color-text-primary);
+    /* Adding a default transition for smoothness across all interactive elements */
+    transition: all 0.2s ease-in-out;
+}
+
+/* Links (Anchor Tags) */
+a {
+    text-decoration: none;
+    color: var(--color-neon-cyan); /* Neon color for links */
+    /* Use the pixel font for all navigation and basic links */
+    font-family: var(--font-pixel);
+    
+    /* Subtle neon glow on hover */
+    text-shadow: 0 0 5px rgba(0, 247, 255, 0.4); 
+}
+
+a:hover {
+    color: var(--color-text-primary);
+    text-shadow: 0 0 10px var(--color-neon-cyan);
+}
+
+/* Custom button styles to handle the 'zoom' effect you requested */
+button {
+    /* Inherit base button styles you defined */
+    cursor: pointer;
+    font-family: var(--font-pixel-bold);
+    
+    /* Default state for the scaling effect */
+    scale: 1; 
+    transition: scale 0.2s ease-in-out, box-shadow 0.3s;
+    border: none;
+}
+
+button:hover {
+    scale: 1.08; /* Your requested zoom effect */
+}
+
+/* Optional: Improve accessibility by removing distracting focus rings */
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--color-neon-yellow);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* esms-frontend/src/index.css (Add this class) */
+
+.container {
+    /* Set max width to prevent content from stretching too wide on large screens */
+    max-width: 1400px; 
+    /* Center the container horizontally */
+    margin-left: auto;
+    margin-right: auto;
+    /* Add padding to the sides for breathing room on smaller screens */
+    padding-left: 60px; /* Matching the 60px padding you used before */
+    padding-right: 60px; /* Matching the 60px padding you used before */
+}
+
+/* Media Query Adjustment for smaller screens */
+@media (max-width: 992px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

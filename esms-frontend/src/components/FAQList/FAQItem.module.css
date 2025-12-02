@@ -1,0 +1,53 @@
+/* esms-frontend/src/components/FAQList/FAQItem.module.css */
+.faqCard {
+  background-color: var(--color-card-bg); /* #222222 */
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 4px;
+  /* Matching the red border visible on the top edge of the cards */
+  border-top: 2px solid var(--color-accent-red); 
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.questionButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 10px 0;
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+.questionText {
+  /* Question text based on the image (appears clean and bold) */
+  font-family: var(--font-sans); 
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0;
+  flex-grow: 1;
+}
+
+.toggleIcon {
+  margin-left: var(--spacing-sm);
+  display: flex;
+  color: var(--color-accent-yellow); /* Using accent color for icons */
+}
+
+.answerText {
+  /* Answer text uses the secondary, slightly muted color */
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding-top: var(--spacing-sm);
+  padding-left: 20px; 
+  margin-top: var(--spacing-sm);
+  border-top: 1px solid #333333; /* Separator line */
+}

@@ -1,0 +1,195 @@
+/* esms-frontend/src/components/Hero/HeroSection.module.css */
+
+/* ========== HERO SECTION ========== */
+.hero {
+    justify-content: space-between;
+    padding: 100px 60px;
+    min-height: 80vh;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-background-dark);
+}
+
+/* NEW: ROW FOR LEFT CONTENT + LOGO ICON */
+.heroTopRow {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    z-index: 20;
+     padding-right: 300px;
+     
+    
+}
+
+/* NEW: LOGO ICON */
+.logoIcon {
+    width: 100px;
+    height: 300px;
+    color: #00eaff; /* blue neon */
+    margin-top: 400px;
+    margin-right: 20px;
+    z-index: 10;
+    filter: drop-shadow(0 0 8px #00eaff); /* optional neon glow */
+   
+    
+}
+
+
+.heroLeft {
+    padding-top: 40px;
+    padding-left: 400px;
+    z-index: 10;
+    max-width: 50%;
+    padding-bottom: 10px;
+}
+
+.mainTitle {
+    font-size: 4rem;
+    color: var(--color-neon-yellow);
+    font-family: var(--font-pixel-bold);
+    text-shadow: 0 0 10px var(--color-neon-yellow-low);
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: var(--color-neon-red);
+    font-family: var(--font-pixel);
+    margin: 10px 0 40px;
+    font-size: 1rem;
+}
+
+.eventInfo {
+    margin-bottom: 30px;
+}
+
+.infoItem {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    font-family: var(--font-primary);
+    color: #eee;
+}
+
+.btnRegister {
+    background: var(--color-neon-yellow);
+    color: #000;
+    font-size: 1rem;
+    padding: 12px 25px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--color-neon-yellow);
+    margin-top: 20px;
+    font-family: var(--font-pixel-bold);
+    transition: scale 0.15s ease-in-out;
+}
+
+.btnRegister:hover {
+    scale: 1.08;
+}
+
+/* --- Hero Right Section --- */
+.heroRight {
+    padding-top: 150px;
+    margin-left: 600px;
+    z-index: 10;
+    max-width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
+
+.detailsBox {
+    background-color: rgba(26, 26, 26, 0.8);
+    padding: 50px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.detailsTitle {
+    font-size: 1.2rem;
+    color: var(--color-neon-red);
+    font-family: var(--font-pixel-bold);
+    margin-bottom: 15px;
+}
+
+.detailsText,
+.esit {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #ddd;
+    font-family: var(--font-primary);
+}
+
+.esit {
+    font-weight: bold;
+    color: var(--color-neon-cyan);
+}
+
+.challengesBox {
+    width: fit-content;
+    padding: 10px 15px;
+    background-color: #222;
+    border: 1px solid var(--color-neon-cyan);
+    color: var(--color-neon-cyan);
+    font-family: var(--font-pixel);
+    font-size: 0.8rem;
+    margin-top: 15px;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+}
+
+/* Background */
+.heroBg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: 5;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .heroLeft {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .heroRight {
+        max-width: 100%;
+    }
+
+    .mainTitle {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .infoItem {
+        font-size: 0.8rem;
+    }
+}
+
+/* NEW: LOGO ICON (Terminal icon) */
+.logoIcon {
+    width: 200px;      /* Bigger hacking icon */
+    height: 200px;
+    color: #00eaff;    /* neon blue */
+    margin-top: 40px;
+    margin-right: 40px;
+    z-index: 20;
+    filter: drop-shadow(0 0 12px #00eaff); /* neon glow */
+}

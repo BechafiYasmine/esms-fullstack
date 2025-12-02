@@ -1,0 +1,38 @@
+/* esms-frontend/src/components/FAQList/FAQList.module.css */
+.faqSection {
+  padding: 0 var(--spacing-md);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.headerContainer {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.header {
+    /* Uses the global H2 style, but ensuring it is white/primary */
+    color: var(--color-text-primary); 
+    font-size: 3rem;
+    margin-bottom: var(--spacing-unit);
+}
+
+.subtext {
+    /* Uses the pixelated font for the "//Questions" text */
+    font-family: var(--font-pixel);
+    color: var(--color-text-secondary);
+    font-size: 1.5rem;
+}
+
+.listContainer {
+  /* Simple vertical stack of the FAQ cards */
+  display: flex;
+  flex-direction: column;
+}
+
+.loading {
+    color: var(--color-accent-yellow);
+    font-family: var(--font-pixel);
+    text-align: center;
+    padding: var(--spacing-lg);
+}
