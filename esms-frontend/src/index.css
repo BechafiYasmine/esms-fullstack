@@ -3,6 +3,9 @@
 /* --- 1. EXTERNAL IMPORTS (MUST BE FIRST) --- */
 /* Importing Press Start 2P and Inter from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Press+Start+2P&display=swap');
+@import "tailwindcss";
+
+
 
 /* --- 2. CSS Custom Properties (Variables) --- */
 :root {
@@ -52,6 +55,8 @@ body {
   color: var(--color-text-primary);
   font-family: var(--font-sans);
   min-height: 100vh;
+   font-family: 'VT323', monospace;
+
 }
 
 /* Ensure all headers use the Pixel font */
@@ -88,18 +93,6 @@ button {
 }
 
 /* --- 4. GLOBAL ELEMENT STYLES & INTERACTIVITY --- */
-
-/* Reset for all elements to inherit the base font/color, especially for the pixelated aesthetic */
-* {
-    /* Preserve existing properties: box-sizing */
-    box-sizing: border-box; 
-    /* The font is applied to the body, but forcing it on all helps ensure components render the pixel look */
-    font-family: var(--font-pixel); 
-    color: var(--color-text-primary);
-    /* Adding a default transition for smoothness across all interactive elements */
-    transition: all 0.2s ease-in-out;
-}
-
 /* Links (Anchor Tags) */
 a {
     text-decoration: none;
