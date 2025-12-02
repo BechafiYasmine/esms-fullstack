@@ -7,21 +7,21 @@
     align-items: center;
     padding: 20px 60px;
     background: var(--color-background-dark); /* Using dark background variable */
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 1000;
 }
 
 .logo {
     color: var(--color-neon-cyan);
-    font-size: 1.2rem;
+    font-size: 3rem;
     font-family: var(--font-pixel-bold);
     text-shadow: 0 0 8px var(--color-neon-cyan);
 }
 
 .nav a {
     margin: 0 12px;
-    font-size: 0.7rem;
+    font-size: 1.7rem;
     text-decoration: none;
     color: #fff;
     transition: color 0.3s;
@@ -35,15 +35,16 @@
 
 .btnHeader {
     /* Styles matching the Register button design */
-    background: var(--color-neon-yellow); 
-    color: #000;
-    font-size: 0.7rem;
-    padding: 8px 16px;
-    border-radius: 8px;
+    background: white ; 
+    color: #eadb78;
+    font-size:1.7rem;
+    padding: 14px 18px;
+    border-radius: 17px;
     cursor: pointer;
     border: none;
     font-family: var(--font-pixel);
     transition: scale 0.15s ease-in-out, box-shadow 0.3s;
+    margin-top :10px;
 }
 
 .btnHeader:hover {

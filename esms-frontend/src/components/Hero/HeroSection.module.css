@@ -1,16 +1,14 @@
-/* esms-frontend/src/components/Hero/HeroSection.module.css */
-
-/* ========== HERO SECTION ========== */
+/* ================= HERO SECTION ================= */
 .hero {
     justify-content: space-between;
     padding: 100px 60px;
     min-height: 80vh;
-    position: relative;
+    position: relative;        /* IMPORTANT for absolute logo */
     overflow: hidden;
     background-color: var(--color-background-dark);
 }
 
-/* NEW: ROW FOR LEFT CONTENT + LOGO ICON */
+/* Row containing hero text + spacing */
 .heroTopRow {
     margin-top: 100px;
     display: flex;
@@ -18,46 +16,48 @@
     align-items: flex-start;
     width: 100%;
     z-index: 20;
-     padding-right: 300px;
-     
-    
+    padding-right: 300px;
 }
 
-/* NEW: LOGO ICON */
+/* ================= NEW TOP-RIGHT PHOTO ================= */
 .logoIcon {
-    width: 100px;
-    height: 300px;
-    color: #00eaff; /* blue neon */
-    margin-top: 400px;
-    margin-right: 20px;
-    z-index: 10;
-    filter: drop-shadow(0 0 8px #00eaff); /* optional neon glow */
-   
+    position: absolute;   /* places it in the corner */
+    top: 20px;            /* distance from top */
+    right: 20px;          /* distance from right */
+    width: 900px;         /* make large */
+    height: auto;
+    z-index: 30;
+    pointer-events: none;
     
 }
 
-
+/* ================= LEFT TEXT ================= */
 .heroLeft {
-    padding-top: 40px;
-    padding-left: 400px;
+    padding-top: 120px;    /* more space above */
+    padding-left: 600px;
+    padding-bottom: 100px; /* more space below */
     z-index: 10;
-    max-width: 50%;
-    padding-bottom: 10px;
+    max-width: 80%;
+    
+    
 }
+
 
 .mainTitle {
-    font-size: 4rem;
+    padding-bottom: 50px;
+    font-size: 8rem;
     color: var(--color-neon-yellow);
     font-family: var(--font-pixel-bold);
     text-shadow: 0 0 10px var(--color-neon-yellow-low);
     margin-bottom: 5px;
+    
 }
 
 .subtitle {
     color: var(--color-neon-red);
     font-family: var(--font-pixel);
     margin: 10px 0 40px;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 .eventInfo {
@@ -65,34 +65,38 @@
 }
 
 .infoItem {
-    font-size: 0.9rem;
+    font-size: 2rem;
     margin-bottom: 12px;
     font-family: var(--font-primary);
     color: #eee;
 }
 
 .btnRegister {
-    background: var(--color-neon-yellow);
-    color: #000;
-    font-size: 1rem;
-    padding: 12px 25px;
-    border-radius: 15px;
+    background: white;
+    color:rgb(196, 196, 43);
+    font-size: 2rem;
+    margin-left: 300px;
+    margin-top: 100px;
+    padding: 20px 25px;
+    border-radius: 40px;
     border: none;
     cursor: pointer;
     box-shadow: 0 0 10px var(--color-neon-yellow);
-    margin-top: 20px;
+    
     font-family: var(--font-pixel-bold);
     transition: scale 0.15s ease-in-out;
+    width: 600px;
 }
 
 .btnRegister:hover {
     scale: 1.08;
 }
 
-/* --- Hero Right Section --- */
+/* ================= RIGHT BOX ================= */
 .heroRight {
     padding-top: 150px;
-    margin-left: 600px;
+    margin-left: 100px;
+    
     z-index: 10;
     max-width: 60%;
     display: flex;
@@ -153,7 +157,7 @@
     z-index: 5;
 }
 
-/* Mobile */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -164,10 +168,13 @@
         max-width: 100%;
         text-align: center;
         margin-bottom: 40px;
+        padding-left: 0;
     }
 
     .heroRight {
         max-width: 100%;
+        margin-left: 0;
+        padding-top: 50px;
     }
 
     .mainTitle {
@@ -181,15 +188,53 @@
     .infoItem {
         font-size: 0.8rem;
     }
+
+    /* smaller icon on mobile */
+    .logoIcon {
+        width: 200px;
+        top: 10px;
+        right: 10px;
+    }
 }
 
-/* NEW: LOGO ICON (Terminal icon) */
-.logoIcon {
-    width: 200px;      /* Bigger hacking icon */
-    height: 200px;
-    color: #00eaff;    /* neon blue */
-    margin-top: 40px;
-    margin-right: 40px;
-    z-index: 20;
-    filter: drop-shadow(0 0 12px #00eaff); /* neon glow */
+
+/* === FLOATING BACKGROUND IMAGE RIGHT SIDE === */
+.photoBackground {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;       /* bigger image */
+    height: auto;
+    opacity: 0.8;      /* same as your screenshot */
+    z-index: 1;         /* BEHIND content */
+    pointer-events: none;
+    padding-right : 60px ;
+    margin-right:150px;
+    padding-top : 20px ;
+    /* Move image down like screenshot */
+    margin-top: 1300px;
 }
+
+/* raise content above image */
+.hero, 
+.heroLeft, 
+.heroRight {
+    position: relative;
+    z-index: 10;
+}
+
+.heroC {
+  display: flex;
+  flex-direction: row;
+  
+  align-items: flex-start;
+
+  width: 100%;
+  padding: 60px 40px;
+  position: relative;
+}
+/* LEFT PHOTO: must NOT be absolute */
+.photoLeft {
+ margin-left: 200px;
+  
+  }

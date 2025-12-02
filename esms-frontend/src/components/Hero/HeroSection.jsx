@@ -13,11 +13,13 @@ const HeroSection = () => {
             <div className={styles.heroTopRow}>
                 
                 <div className={styles.heroLeft}>
-                    <h1 className={styles.mainTitle}>Hack Escape</h1>
+                    <h1 className={styles.mainTitle}>Hack</h1>
+                    <h1 className={styles.mainTitle}>Escape</h1>
                     <p className={styles.subtitle}>Where Limits End , Cyber Skills Begin !!</p>
 
                     <div className={styles.eventInfo}>
-                        <p className={styles.infoItem}>📅 December 11th-12th</p>
+                        <p id="about"  className={styles.infoItem}>📅 December 11th-12th</p>
+                        <br></br>
                         <p className={styles.infoItem}>
                             📍 ESI - École nationale supérieure d’informatique, Algiers, Oued Smar
                         </p>
@@ -26,9 +28,22 @@ const HeroSection = () => {
                     <button className={styles.btnRegister}>Register Now</button>
                 </div>
 
-                {/* NEW BIG HACKING ICON */}
-                <Terminal className={styles.logoIcon} />
+                {/* NEW BIG HACKING photo*/}
+                <div className={styles.heroContainer}>
+    <img src="/photo.png" alt="Event Logo" className={styles.logoIcon} />
+    {/* rest of the content */}
+</div>
+           
             </div>
+
+         <div className={styles.heroC}>
+    
+    {/* LEFT IMAGE */}
+    <img
+        src="/photo3.png"
+        alt="Left Decoration"
+        className={styles.photoLeft}
+    />
 
             {/* RIGHT BOX */}
             <div className={styles.heroRight}>
@@ -54,12 +69,11 @@ const HeroSection = () => {
                     <div className={styles.challengesBox}>+4 Challenges</div>
                 </div>
             </div>
-
-            {/* BACKGROUND */}
-            <div
-                className={styles.heroBg}
-                style={{ backgroundImage: `url(${CYBER_KEY_BG})` }}
-            ></div>
+</div>
+           
+    {/* FLOATING BACKGROUND IMAGE */}
+    <img src="/photo2.png" alt="Event" className={styles.photoBackground} />
+    
         </section>
     );
 };
