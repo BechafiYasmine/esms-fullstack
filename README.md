@@ -85,10 +85,17 @@ Reusable component structure
 
 Clean and modular CSS
 
-<img width="719" height="352" alt="image_720" src="https://github.com/user-attachments/assets/1df2f975-96b0-4020-9992-096c204452ff" />
-<img width="720" height="351" alt="image_720" src="https://github.com/user-attachments/assets/be9e621e-ff8d-4c54-b28f-f73f399b4575" />
-<img width="720" height="353" alt="image_720" src="https://github.com/user-attachments/assets/68020b74-e9fb-4271-8bd4-65600250bd01" />
-<img width="720" height="355" alt="image_720" src="https://github.com/user-attachments/assets/9cf26863-e71b-43a7-bde0-39df5d0d7d64" />
-<img width="720" height="337" alt="image_720" src="https://github.com/user-attachments/assets/93648382-c5a9-4ce1-b201-3cd9f6bab9d9" />
+<img width="1873" height="923" alt="image" src="https://github.com/user-attachments/assets/b914de07-7556-4401-b2fb-103dec9b5196" />
+<img width="1876" height="902" alt="image" src="https://github.com/user-attachments/assets/5810ae51-d8d1-40ce-bc9b-49520054deff" />
+<img width="1887" height="923" alt="image" src="https://github.com/user-attachments/assets/690df47a-b600-46e5-a450-cb3aeffd92a4" />
+<img width="1887" height="925" alt="image" src="https://github.com/user-attachments/assets/e387b6ac-094d-46e0-b0dc-132852448480" />
+<img width="1878" height="921" alt="image" src="https://github.com/user-attachments/assets/fc81795f-c047-4dfe-b1fc-5e7be0ea99df" />
+<img width="1887" height="918" alt="image" src="https://github.com/user-attachments/assets/2052bcfd-e6cd-466d-8ede-b00eabc023bd" />
+
+
+
+
+
+
 
 
