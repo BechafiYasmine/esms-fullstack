@@ -1,5 +1,5 @@
 import React from "react";
-import TimelineDay from "./TimelineDay";
+import TimelineDay from "./TimelineDay.jsx";
 
 export default function AgendaTimeline() {
   const events = {
@@ -89,4 +89,5 @@ export default function AgendaTimeline() {
       </div>
     </div>
   );
+
 }
